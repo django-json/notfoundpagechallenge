@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.not-found {
+	margin: 40px;
+	min-height: 100vh;
+
+	header {
+		h2 {
+			font-family: Inconsolata;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 25px;
+			letter-spacing: -0.08em;
+			text-transform: uppercase;
+
+			color: #333333;
+		}
+	}
+
+	main {
+		display: flex;
+		padding: 50px 0 50px 0;
+
+		.error-image-container {
+			flex: 1 0 40vw;
+			margin-right: 10vw;
+			margin-bottom: 40px;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.error-info {
+			flex: 0 1 50vw;
+
+			h2 {
+				font-family: Space Mono;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 64px;
+				line-height: 95px;
+				letter-spacing: -0.035em;
+
+				color: #333333;
+				margin: 0 auto 0 auto;
+
+			}
+			p {
+				font-family: Space Mono;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 36px;
+				letter-spacing: -0.035em;
+
+				color: #4F4F4F;
+				width: 70%;
+			}
+
+			button {
+				font-family: Space Mono;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 21px;
+
+				letter-spacing: -0.035em;
+				text-transform: uppercase;
+
+				color: #FFFFFF;
+				background: #333333;
+				border: none;
+				padding: 15px 25px;
+				margin-top: 20px;
+				cursor: pointer;
+			}
+		}
+
+		@media screen and (max-width: 800px) {
+			display: block;
+
+			.error-image-container {
+				margin-right: unset;
+			}
+
+			.error-text {
+				p:first-child {
+					font-size: 54px;
+					line-height: 70px;
+				}
+
+				p:nth-child(2) {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+	footer {
+		p {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 17px;
+
+			text-align: center;
+			color: #333333;
+
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+		}
+	}
+}
+	
+	
